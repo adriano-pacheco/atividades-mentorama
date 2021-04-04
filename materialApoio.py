@@ -28,4 +28,3 @@ def soma2(*valores):#somando todos os valores de uma tupla
     print(f'Somando os valores {valores} temos {s}')
 
 
-soma2(2,3,7,8,40,60)
