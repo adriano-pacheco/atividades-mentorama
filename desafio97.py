@@ -5,7 +5,6 @@
 def lin(quantidade):
     print('~'*len(quantidade))
 
-
 def escreva(txt):
     lin(txt)
     print(txt)
