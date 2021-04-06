@@ -4,11 +4,10 @@ def titulo(txt): #criando linha com texto
     print('_'*30)
 
 def soma(a, b): #somando 2 numeros
-    print('_'*30 )
-    print(f'A = {a} e B = {b}')
     s = a + b 
+    print('~~'*15)
     print(f'A soma A + B = {s}')
-    print('_'*30)
+    print('~~'*15)
 
 def contador(*num): #inserindo varios numeros em uma tupla
     tam = len(num)
@@ -26,5 +25,4 @@ def soma2(*valores):#somando todos os valores de uma tupla
     for num in valores:
         s+= num
     print(f'Somando os valores {valores} temos {s}')
-
 
