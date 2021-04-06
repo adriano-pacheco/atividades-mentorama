@@ -16,12 +16,14 @@ def maior(*num):
         if valor > maior2:
             maior2 = valor
     print()
-    lin()
+   
     print(f'O maior numero nessa lista é {maior2}, e a quantidade de numeros são {cont} ')
     lin()
 
 maior(10,20,50,0,60,81)
-
+maior(10,1)
+maior(10,20,83,81)
+maior(10,25)
 
 
 
