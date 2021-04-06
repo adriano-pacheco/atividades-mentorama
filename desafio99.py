@@ -3,7 +3,7 @@
 
 #Seu programa tem que analizar os valores e dizer qual deles é maior.
 def lin():
-    print('~'*65)
+    print('-='*30)
 
 def maior(*num):
     cont = 0
@@ -24,6 +24,7 @@ maior(10,20,50,0,60,81)
 maior(10,1)
 maior(10,20,83,81)
 maior(10,25)
+maior(0)
 
 
 
