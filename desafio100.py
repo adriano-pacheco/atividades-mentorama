@@ -12,32 +12,25 @@ def lin ():
 numeros = list()
 
 def sorteio(lista):
-    lin()
     cont = 0
     while cont < 5:
         lista.append(randint(1,10))
         cont += 1
-    #print(lista)
-    lin()
-sorteio(numeros)
+#sorteio(numeros)
 
 def somarPar(lista):
+    sorteio(numeros)
     total = 0
     ehPar = list()
     lin()
-    for num in numeros:
+    for num in lista:
         if num % 2 ==0:
             ehPar.append(num)
             total = total + num
-            #print(f'{num}', end= '-') 
+    print(f'Numeros sorteados: {numeros}')       
     print(f'numeros pares {ehPar}!')
     print(f'A soma deles são {total}!')
     lin()
 
-    #print(f'Os numeros pares são {num} e \na soma total deles são {total}\n', end=' ')
-    #print(f'A soma total da lista é {total}')
 
-
-#numerinho = [0,5,17,12,14,15]
-#somarPar(numerinho)
 somarPar(numeros)
