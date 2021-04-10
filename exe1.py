@@ -5,22 +5,37 @@
 
 pessoas = dict()
 listaPessoas = list()
-resposta = "s"
 
+resposta = "s"
 while resposta =="s":
     pessoas['nome'] = str(input('Insira o nome: '))
     pessoas['sexo'] = str(input('Qual o sexo: '))
     pessoas['idade'] = int(input('Qual a idade: '))
     listaPessoas.append(pessoas.copy())
-    resposta = str(input('Deseja continuar s/n: '))
+    resposta = input('Deseja continuar s/n: ')
+
 
 #a)Quantidade de pessoas que foram cadastradas
 pessoasCadastradas = len(listaPessoas)
-print(f'A quantidade de pessaos ccadastradas são {pessoasCadastradas}')
+print(f'A quantidade de pessaos cadastradas são {pessoasCadastradas}')
+
 #b)A média de idade
 media = 0
-for cont in pessoas:
-    media = media + cont
+for i in listaPessoas:
+    media = media + i['idade']
+media2 = media / pessoasCadastradas
+print(f'A média de idade das pessoas cadastradas é {media2}')
+
 #c)Uma lista com as mulheres
+listM = []
+for i in listaPessoas:
+    if i['sexo'] == 'f':
+        listM.append(i['nome'])
+print(f'A lsita com as mulheres {listM}')
 #d)Uma lista de pessoas com idade acima da média
+acMedia = []
+for i in listaPessoas:
+    if i['idade'] > media2:
+        acMedia.append(i['nome'])
+print(f'As pessoas acima da idade média são : {acMedia}')
 
