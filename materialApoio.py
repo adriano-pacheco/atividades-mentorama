@@ -26,3 +26,5 @@ def soma2(*valores):#somando todos os valores de uma tupla
         s+= num
     print(f'Somando os valores {valores} temos {s}')
 
+def lin():
+    print('~'*30)

@@ -1,4 +1,5 @@
 from random import randint
+from materialApoio import lin
 #Faça um programa que tenha uma lista chamada
 #numeros e duas funções chamadas sorteio()
 #e somarPar(). A primeira função vai sortear 5 
@@ -6,8 +7,7 @@ from random import randint
 #segunda função vai mostrar a soma entre todos os 
 #numeors pares sorteados pela função anterior.
 
-def lin ():
-    print('~'*30)
+
 
 numeros = list()
 
