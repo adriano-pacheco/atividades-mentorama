@@ -17,7 +17,7 @@ while resposta =="s":
 
 #a)Quantidade de pessoas que foram cadastradas
 pessoasCadastradas = len(listaPessoas)
-print(f'A quantidade de pessaos cadastradas são {pessoasCadastradas}')
+print(f'A quantidade de pessoas cadastradas são {pessoasCadastradas}')
 
 #b)A média de idade
 media = 0
