@@ -1,10 +1,11 @@
+#Crie um programa que leia o nome, sexo e idade
+#de varias pessoas, guardando os dados de cada 
+#pessoa em um dicionario e todos os dicionaris em uma lista.
+#No final mostre:
+
 pessoas = dict()
 listaPessoas = list()
 resposta = "s"
-idade = []
-nomes = []
-generos = []
-
 
 while resposta =="s":
     pessoas['nome'] = str(input('Insira o nome: '))
@@ -12,13 +13,14 @@ while resposta =="s":
     pessoas['idade'] = int(input('Qual a idade: '))
     listaPessoas.append(pessoas.copy())
     resposta = str(input('Deseja continuar s/n: '))
-   
-for i in listaPessoas:
-   # for n, s, a in i.items():
-    nomes.append(pessoas['nome'].copy())
-    generos.append(pessoas['sexo'].copy())
-    idade.append(pessoas['idade'].copy())
 
-print(idade)
-print(nomes)
-print(generos)
+#a)Quantidade de pessoas que foram cadastradas
+pessoasCadastradas = len(listaPessoas)
+print(f'A quantidade de pessaos ccadastradas são {pessoasCadastradas}')
+#b)A média de idade
+media = 0
+for cont in pessoas:
+    media = media + cont
+#c)Uma lista com as mulheres
+#d)Uma lista de pessoas com idade acima da média
+
